@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BuatPesananActivity">
+
+    <Button
+        android:id="@+id/pesan"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="131dp"
+        android:text="ORDER"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hitung" />
+
+    <Button
+        android:id="@+id/hitung"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="131dp"
+        android:text="COUNT"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/staticTotalPrice" />
+
+    <TextView
+        android:id="@+id/food_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="62dp"
+        android:text="TextView"
+        android:textColor="#545657"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/total_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="62dp"
+        android:text="0"
+        android:textColor="#545657"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/promo_code" />
+
+    <TextView
+        android:id="@+id/staticTotalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="20dp"
+        android:text="Total Price"
+        android:textColor="#545657"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCode" />
+
+    <EditText
+        android:id="@+id/promo_code"
+        android:layout_width="122dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="131dp"
+        android:layout_marginEnd="62dp"
+        android:hint="Enter Promo"
+        android:textAlignment="viewEnd"
+        android:inputType="text"
+        android:visibility="invisible"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/food_price" />
+
+    <TextView
+        android:id="@+id/textCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="20dp"
+        android:text="Promo Code"
+        android:visibility="invisible"
+        android:textColor="#545657"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/food_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="62dp"
+        android:text="TextView"
+        android:textColor="#545657"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/food_category" />
+
+    <TextView
+        android:id="@+id/staticPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="20dp"
+        android:text="Food Price"
+        android:textColor="#545657"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/staticCatecory" />
+
+    <TextView
+        android:id="@+id/staticCatecory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="20dp"
+        android:text="Food Category"
+        android:textColor="#545657"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/staticFoodName" />
+
+    <TextView
+        android:id="@+id/food_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="62dp"
+        android:text="TextView"
+        android:textColor="#545657"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/food_name" />
+
+    <TextView
+        android:id="@+id/pesanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="295dp"
+        android:text="Order"
+        android:textColor="#545657"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/staticFoodName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="28dp"
+        android:text="Food Name"
+        android:textColor="#545657"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pesanan" />
+
+    <TextView
+        android:id="@+id/staticPayMethod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="20dp"
+        android:text="Payment Method"
+        android:textColor="#545657"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/staticPrice" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="197dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/staticPayMethod">
+
+        <RadioButton
+            android:id="@+id/cash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Via Cash"
+            tools:layout_editor_absoluteX="92dp"
+            tools:layout_editor_absoluteY="307dp" />
+
+        <RadioButton
+            android:id="@+id/cashless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Via Cashless"
+            tools:layout_editor_absoluteX="92dp"
+            tools:layout_editor_absoluteY="275dp" />
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
